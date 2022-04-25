@@ -36,11 +36,20 @@ app.post('/v1/explorers', (req, res) => {
         // status code 201 es: la solicitud fue recibida y entendida y está siendo procesada.
 })
 
+// Actualizar explorer
 app.put('/v1/explorers/:id', (req, res) => {
     console.info(`Api explorers PUT request ${new Date()}`)
     console.info(`Update explorer whit id ${req.params.id}`)
     const requestBody = req.body // parametros de un cliente
     res.status(200).json({ message: "Updated!" })
+})
+
+// Delate
+app.delete('/v1/explorers/:id', (req, res) => {
+    console.info(`Api explorers DELATE request ${new Date()}`)
+    console.info(`Delate explorer whit id ${req.params.id}`)
+    const requestBody = req.body // parametros de un cliente
+    res.status(200).json({ message: "Deleted" })
 })
 
 
