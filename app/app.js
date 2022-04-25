@@ -36,6 +36,12 @@ app.post('/v1/explorers', (req, res) => {
         // status code 201 es: la solicitud fue recibida y entendida y está siendo procesada.
 })
 
+app.put('/v1/explorers/:id', (req, res) => {
+    console.info(`Api explorers PUT request ${new Date()}`)
+    console.info(`Update explorer whit id ${req.params.id}`)
+    const requestBody = req.body // parametros de un cliente
+    res.status(200).json({ message: "Updated!" })
+})
 
 
 // Con esto inicializamos esta app
