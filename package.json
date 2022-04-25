@@ -1,0 +1,27 @@
+{
+  "name": "api_expressjs",
+  "version": "0.0.1",
+  "description": "practica de api generada con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meclajer/express_api.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "api"
+  ],
+  "author": "meclajer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meclajer/express_api/issues"
+  },
+  "homepage": "https://github.com/meclajer/express_api#readme",
+  "devDependencies": {
+    "express": "^4.17.3"
+  }
+}
