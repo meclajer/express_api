@@ -33,7 +33,10 @@ app.post('/v1/explorers', (req, res) => {
     console.log(`Api explorers POST request ${new Date()}`)
     const requestBody = req.body //parametros de un cliente
     res.status(201).json({ mesagge: "Created" })
+        // status code 201 es: la solicitud fue recibida y entendida y está siendo procesada.
 })
+
+
 
 // Con esto inicializamos esta app
 app.listen(port, () => {
